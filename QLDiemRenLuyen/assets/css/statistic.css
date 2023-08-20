@@ -1,0 +1,98 @@
+.main-content {
+    flex-direction: column;
+}
+.chart {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    gap: 2px;
+    border: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.chart .chart-container {
+    width: 70%;
+    height: 100%;
+    border-right: 1px solid #ddd;
+    display: flex;
+    gap: 2px;
+    padding: 4%;
+    align-items: flex-end;
+}
+
+.chart .chart-container .chart-item-col {
+    height: 2%;
+    width: 10%;
+    background-color: rgba(40, 57, 124, 0.859);
+}
+
+.chart .activity-list {
+    padding: 20px;
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: 30%;
+    
+}
+
+.chart .activity-list .activity-list-header {
+    
+    width: 100%;
+    height: 55px;
+    padding:0px 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-bottom: 0px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.chart .activity-list .activity-list-header p {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.chart .student-activity-item {
+    width: 100%;
+    height: 45px;
+    padding:0px 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-bottom: 0px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chart .student-activity-item p {
+    margin: 0;
+    font-size: 12px;
+    user-select: none;
+}
+
+.chart .student-activity-item p:nth-child(2) {
+    font-size: 18px;
+    color: orange;
+}
+
+
+.chart .student-activity-item:nth-last-child(1) {
+    border-bottom: 1px solid #ddd;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+
+.highlight {
+    background-color: orangered!important;
+}
+
+
+

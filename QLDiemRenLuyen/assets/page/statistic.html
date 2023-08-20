@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/statistic.css">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
+        integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"
+        integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="dashboard-layout">
+        <div class="side-nav">
+            <div class="side-nav-header">
+
+            </div>
+            <div class="side-nav-list">
+                <div class="side-nav-item">
+                    <div class="icon">
+                        <i class="bi bi-people-fill"></i>
+                    </div>
+                    <div class="label"><a href="dashboard.html">Quản lí điểm rèn luyện</a></div>
+                </div>
+                <div class="side-nav-item">
+                    <div class="icon">
+                        <i class="bi bi-calendar-event-fill"></i>
+                    </div>
+                    <div class="label"><a href="activities.html">Quản lí Hoạt động</a></div>
+                </div>
+                <div class="side-nav-item">
+                    <div class="icon">
+                        <i class="bi bi-clipboard-data-fill"></i>
+                    </div>
+                    <div class="label"><a href="statistic.html">Thống kê</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-header">
+                <h2>Thống kê</h2>
+            </div>
+            <div class="main-content">
+                <h4>Thống kê sinh viên tham gia hoạt động</h4>
+                <div class="chart">
+                    <div class="chart-container">
+                        <div class="chart-item-col"></div>
+                        <div class="chart-item-col"></div>
+                        <div class="chart-item-col"></div>
+                        <div class="chart-item-col"></div>
+                        <div class="chart-item-col"></div>
+                        <div class="chart-item-col"></div>
+                        <div class="chart-item-col"></div>
+                        <div class="chart-item-col" style="height: 40%;" id="col-ACT2"></div>
+                        <div class="chart-item-col" style="height: 60%;" id="col-ACT1"></div>
+                        <div class="chart-item-col" style="height: 20%;" id="col-ACT3"></div>
+                        <div class="chart-item-col"></div>
+                        <div class="chart-item-col"></div>
+                        <div class="chart-item-col"></div>
+                        <div class="chart-item-col"></div>
+                        <div class="chart-item-col"></div>
+                        <div class="chart-item-col"></div>
+                        <div class="chart-item-col"></div>
+                        <div class="chart-item-col"></div>
+                        <div class="chart-item-col"></div>
+                    </div>
+                    <div class="activity-list">
+                        <div class="activity-list-header">
+                            <p>Tên hoạt động</p>
+                            <p>Số lượng tham gia</p>
+                        </div>
+                        <div class="activity-list-inner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/statistic.js"></script>
+</body>
+
+</html>

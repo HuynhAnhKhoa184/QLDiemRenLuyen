@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
+        integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"
+        integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+
+<body>
+    <div class="dashboard-layout">
+        <div class="side-nav">
+            <div class="side-nav-header">
+
+            </div>
+            <div class="side-nav-list">
+                <div class="side-nav-item">
+                    <div class="icon">
+                        <i class="bi bi-people-fill"></i>
+                    </div>
+                    <div class="label"><a href="dashboard.html">Quản lí điểm rèn luyện</a></div>
+                </div>
+                <div class="side-nav-item">
+                    <div class="icon">
+                        <i class="bi bi-calendar-event-fill"></i>
+                    </div>
+                    <div class="label"><a href="activities.html">Quản lí Hoạt động</a></div>
+                </div>
+                <div class="side-nav-item">
+                    <div class="icon">
+                        <i class="bi bi-clipboard-data-fill"></i>
+                    </div>
+                    <div class="label"><a href="statistic.html">Thống kê</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-header">
+                <h2>Quản lí điểm rèn luyện</h2>
+            </div>
+            <div class="main-content">
+                <div class="student-practise-point">
+                    <!-- <div class="student-practise-point-total"></div> -->
+                    <div class="student-practise-point-container">
+                        <div class="filter">
+                            <input type="text" placeholder="Tìm kiếm..." onkeyup="onSearchStudent()">
+                            <select class="form-select form-select-sm" onchange="onChangeSelectStudentSearch()">
+                                <option value="mssv" selected>MSSV</option>
+                                <option value="name">Tên</option>
+                            </select>
+                        </div>
+                        <h4>Danh sách sinh viên</h4>
+                        <div class="student-practise-point-list">
+                            <table class="table ">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">MSSV</th>
+                                        <th scope="col">Tên</th>
+                                        <th scope="col">Lớp</th>
+                                        <th scope="col">Tổng rèn luyện</th>
+                                    </tr>
+                                </thead>
+                                <tbody> 
+                                    <!-- Inner code here -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="student-activity">
+                    <div class="filter">
+                        <input type="text" placeholder="Tìm kiếm..." onkeyup="onSearchActivity()">
+                        <select class="form-select form-select-sm">
+                            <option selected>Tên hoạt động</option>
+                        </select>
+                    </div>
+                    <h4>Danh sách hoạt động</h4>
+                    <div class="student-activity-list">
+                        <div class="student-activity-item">
+                            <div class="info">
+                                <div class="name">Tham gia hội thảo khoa học công nghệ</div>
+                                <div class="point">
+                                    <p>+5</p>
+                                    <p>Điểm rèn luyện</p>
+                                </div>
+                                <div class="join-check">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Tham gia
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

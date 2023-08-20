@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login .login-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.login .login-container .login-form {
+    flex-grow: 1;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.login .login-container .login-image {
+    flex-basis: 60%;
+    flex-shrink: 1;
+    min-width: 60%;
+    border-right: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.login .login-container .login-image img {
+    width: 350px;
+}
+
+
+.login .login-container .login-form .login-form-container {
+    width: 68%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login .login-container .login-form .login-form-container h2 {
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 28px;
+    color: #3051AA;
+    margin-bottom: 4px;
+}
+
+.login .login-container .login-form .login-form-container .sm-title {
+    text-transform: capitalize;
+    width: 100%;
+    font-size: 16px;
+    color: #99B4E4;
+}
+
+.login .login-container .login-form .login-form-submit {
+    flex-grow: 1;
+    margin-top: 40px;
+
+}
+
+.login .login-container .login-form .login-form-submit .username, .password {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    gap: 10px;
+    display: flex;
+}
+
+.login .login-container .login-form .login-form-submit .username .icon, .password .icon {
+    flex-basis: 45px;
+    width: 45px;
+    height: 44px;
+    border-right: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.login .login-container .login-form .login-form-submit .username .input-value, .password .input-value {
+    flex-grow: 1;
+    height: 100%;
+    background-color: red;
+}
+
+.login .login-container .login-form .login-form-submit .username .input-value input, .password .input-value input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+    color: rgba(51, 51, 51, 0.831);
+}
+
+.submit-group-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submit-group-btn a {
+    color: rgba(51, 51, 51, 0.707);
+    cursor: pointer;
+}
+
+.login-btn {
+    width: 200px;
+    height: 40px;
+    background-color: #6087D1;
+    color: white;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.263) 0px -50px 36px -28px inset;
+}
+
+.login-btn a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.side-line {
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    border-left: 1px solid #ddd;
+    top: 0;
+    right: 0px;
+}
+
+
+.mask {
+    width: calc(100% - 51px);
+    display: flex;
+    position: absolute;
+    left: 0;
+    align-items: center;
+    gap: 10px;
+    bottom: 35%;
+    padding: 0px 40px;
+}
+
+.mask img {
+    width: 70px;
+    opacity: 0.1;
+}
+
+.mask .line-dashed {
+    flex-grow: 1;
+    height: 1px;
+    border-top: 1px dashed #ddd;
+}
+
+
+
