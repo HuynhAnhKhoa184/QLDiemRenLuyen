@@ -27,6 +27,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    z-index: 100000;
 }
 
 .login .login-container .login-image {
